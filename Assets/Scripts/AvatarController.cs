@@ -8,10 +8,14 @@ public class MapTransform
     public Vector3 trackingPositionOffset;
     public Vector3 trackingRotationOffset;
 
-    public void MapVRAvatar()
+    public void MapVRAvatar(bool log = false)
     {
         IKTarget.position = vrTarget.TransformPoint(trackingPositionOffset);
         IKTarget.rotation = vrTarget.rotation * Quaternion.Euler(trackingRotationOffset);
+        if (log)
+        {
+            Debug.Log(IKTarget.position.ToString("F2") + ", " + IKTarget.rotation.ToString("F2"));
+        }
     }
 }
 public class AvatarController : MonoBehaviour
@@ -26,12 +30,12 @@ public class AvatarController : MonoBehaviour
 
     [SerializeField] private Vector3 headBodyOffset;
 
-    void LateUpdate()
+    private void LateUpdate()
     {
         transform.position = IKHead.position + headBodyOffset;
         transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(IKHead.forward, Vector3.up).normalized, Time.deltaTime * turnSmoothness); ;
         head.MapVRAvatar();
         leftHand.MapVRAvatar();
-        rightHand.MapVRAvatar();
+        rightHand.MapVRAvatar(true);
     }
 }
