@@ -21,14 +21,14 @@ public class GizmoRenderer : MonoBehaviour
         switch (gizmoType)
         {
             case GizmoType.Sphere:
-                Gizmos.DrawSphere(transform.position, gizmoSize);
+                Gizmos.DrawWireSphere(transform.position, gizmoSize);
                 break;
 
             case GizmoType.Cube:
                 Matrix4x4 originalMatrix = Gizmos.matrix;
 
                 Gizmos.matrix = Matrix4x4.TRS(transform.position, transform.rotation, Vector3.one);
-                Gizmos.DrawCube(Vector3.zero, Vector3.one * gizmoSize);
+                Gizmos.DrawWireCube(Vector3.zero, Vector3.one * gizmoSize);
 
                 Gizmos.matrix = originalMatrix;                
                 break;
