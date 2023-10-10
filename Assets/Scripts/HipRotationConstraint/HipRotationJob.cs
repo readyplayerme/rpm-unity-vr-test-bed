@@ -22,16 +22,14 @@ public struct HipRotationJob : IWeightedAnimationJob
             var constrainedRot = constrained.GetRotation(stream);
             var sourceRot = source.GetRotation(stream);
 
-            var constrainedRotY = Quaternion.Euler(0, constrainedRot.eulerAngles.y, 0);
-
             var directionVector = sourceRot * Vector3.forward;
-            var d = Vector3.ProjectOnPlane(directionVector, Vector3.up);
+            var direction = Vector3.ProjectOnPlane(directionVector, Vector3.up);
 
             constrained.SetRotation(
                 stream,
                 Quaternion.Lerp(
                     constrainedRot,
-                    Quaternion.LookRotation(d),
+                    Quaternion.LookRotation(direction),
                     w)
             );
         }
