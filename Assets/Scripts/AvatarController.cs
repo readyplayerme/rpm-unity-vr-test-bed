@@ -14,7 +14,7 @@ public class MapTransform
         IKTarget.rotation = vrTarget.rotation * Quaternion.Euler(trackingRotationOffset);
         if (log)
         {
-            Debug.Log(IKTarget.position.ToString("F2") + ", " + IKTarget.rotation.ToString("F2"));
+            // Debug.Log(IKTarget.position.ToString("F2") + ", " + IKTarget.rotation.ToString("F2"));
         }
     }
 }

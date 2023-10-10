@@ -347,6 +347,54 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 794476035}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &179397710
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 179397711}
+  - component: {fileID: 179397712}
+  m_Layer: 0
+  m_Name: IKSpine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &179397711
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179397710}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 545904036}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &179397712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179397710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d91e7d2afecb4f43b233905c4a7e1b8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Weight: 1
+  m_Data:
+    constrainedObject: {fileID: 215161015}
+    sourceObject: {fileID: 1774220950}
 --- !u!4 &201202693 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7333990954364101109, guid: ddfead624ee18604b99647e1d6b1a8e5,
@@ -586,6 +634,7 @@ Transform:
   - {fileID: 1601557093}
   - {fileID: 1774220950}
   - {fileID: 1228066624}
+  - {fileID: 179397711}
   m_Father: {fileID: 662395072}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &597085230 stripped
@@ -3262,7 +3311,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1774220949}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f7c902dab7bfeb4a9887186d050428c, type: 3}
+  m_Script: {fileID: 11500000, guid: 931da0fa76b31994ca0590bbdd2a8c82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1778988530 stripped
