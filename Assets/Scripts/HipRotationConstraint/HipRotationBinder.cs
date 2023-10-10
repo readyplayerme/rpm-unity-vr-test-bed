@@ -10,11 +10,12 @@ namespace Unity.Template.VR
         {
             return new HipRotationJob()
             {
-
-                constrained = ReadWriteTransformHandle.Bind(animator, data.constrainedObject),
-                source = ReadWriteTransformHandle.Bind(animator, data.sourceObject)
+                hipBone = ReadWriteTransformHandle.Bind(animator, data.hipBone),
+                headTarget = ReadWriteTransformHandle.Bind(animator, data.headTarget),
+                leftHandTarget = ReadWriteTransformHandle.Bind(animator, data.leftHandTarget),
+                rightHandTarget = ReadWriteTransformHandle.Bind(animator, data.rightHandTarget),
+                yRotationOffset = data.yRotationOffset
             };
-
         }
 
         public override void Destroy(HipRotationJob job)
