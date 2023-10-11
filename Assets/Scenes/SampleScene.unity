@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 179397711}
   - component: {fileID: 179397712}
   m_Layer: 0
-  m_Name: IKSpine
+  m_Name: IKHips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -393,11 +393,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Weight: 1
   m_Data:
-    hipBone: {fileID: 215161015}
-    headTarget: {fileID: 1774220950}
-    leftHandTarget: {fileID: 1221716495}
-    rightHandTarget: {fileID: 1400669509}
-    yRotationOffset: 0
+    constrainedObj: {fileID: 215161015}
+    sourceObj: {fileID: 1774220950}
 --- !u!4 &201202693 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7333990954364101109, guid: ddfead624ee18604b99647e1d6b1a8e5,
@@ -1746,7 +1743,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.01, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2101,7 +2098,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1228066623}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3089,8 +3086,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711264566}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.70042783, y: -0.09465669, z: 0.61976576, w: -0.34107408}
-  m_LocalPosition: {x: 0.74, y: 1.257604, z: -0.58}
+  m_LocalRotation: {x: 0.7004278, y: 0.09465686, z: -0.6197657, w: 0.34107405}
+  m_LocalPosition: {x: 0.74000025, y: 1.257604, z: -0.58000004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3121,12 +3118,12 @@ ParentConstraint:
   m_Enabled: 1
   serializedVersion: 2
   m_Weight: 1
-  m_TranslationAtRest: {x: 0.74, y: 1.257604, z: -0.58}
-  m_RotationAtRest: {x: 36.521584, y: -89.93711, z: -158.83379}
+  m_TranslationAtRest: {x: 0.74000025, y: 1.257604, z: -0.58000004}
+  m_RotationAtRest: {x: 36.521587, y: -89.93712, z: -158.83382}
   m_TranslationOffsets:
-  - {x: 0.74003136, y: 0.21913779, z: -0.5974192}
+  - {x: 0.7400316, y: 0.21913779, z: -0.5974193}
   m_RotationOffsets:
-  - {x: 36.49719, y: -88.56332, z: -156.51987}
+  - {x: 36.497204, y: -88.563324, z: -156.51988}
   m_AffectTranslationX: 1
   m_AffectTranslationY: 1
   m_AffectTranslationZ: 1

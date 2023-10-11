@@ -19,9 +19,10 @@ public class DebugForward : MonoBehaviour
         var normal = Vector3.Cross(headLeftHandVector, headRightHandVector);
         var normalOnPlane = Vector3.ProjectOnPlane(normal, Vector3.up);
 
-        var centroid = (leftHand.position + rightHand.position + head.position)/3f;
-
-        Gizmos.DrawSphere(centroid, 0.05f);
+        var centroid = (leftHand.position + rightHand.position)/2f;
+        
+        
+        Gizmos.DrawWireSphere(centroid, 0.05f);
         Gizmos.DrawRay(centroid, normalOnPlane);
     }
 }
