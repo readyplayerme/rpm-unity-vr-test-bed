@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
 
-namespace Unity.Template.VR
+namespace ReadyPlayerMe.VR
 {
     [Serializable]
     public struct CustomRotationData  : IAnimationJobData

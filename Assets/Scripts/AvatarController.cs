@@ -1,41 +1,52 @@
 using UnityEngine;
 
-[System.Serializable]
-public class MapTransform
+namespace ReadyPlayerMe.VR
 {
-    public Transform vrTarget;
-    public Transform IKTarget;
-    public Vector3 trackingPositionOffset;
-    public Vector3 trackingRotationOffset;
-
-    public void MapVRAvatar(bool log = false)
+    /// <summary>
+    /// Represents a mapping between virtual reality (VR) and Inverse Kinematics (IK) targets.
+    /// </summary>
+    [System.Serializable]
+    public class MapTransform
     {
-        IKTarget.position = vrTarget.TransformPoint(trackingPositionOffset);
-        IKTarget.rotation = vrTarget.rotation * Quaternion.Euler(trackingRotationOffset);
-        if (log)
+        public Transform vrTarget;
+        public Transform IKTarget;
+        public Vector3 trackingPositionOffset;
+        public Vector3 trackingRotationOffset;
+
+        /// <summary>
+        /// Maps the VR avatar's position and rotation to the IK target using specified offsets.
+        /// </summary>
+        public void MapVRAvatar()
         {
-            // Debug.Log(IKTarget.position.ToString("F2") + ", " + IKTarget.rotation.ToString("F2"));
+            IKTarget.position = vrTarget.TransformPoint(trackingPositionOffset);
+            IKTarget.rotation = vrTarget.rotation * Quaternion.Euler(trackingRotationOffset);
         }
     }
-}
-public class AvatarController : MonoBehaviour
-{
-    [SerializeField] private MapTransform head;
-    [SerializeField] private MapTransform leftHand;
-    [SerializeField] private MapTransform rightHand;
 
-    [SerializeField] private float turnSmoothness;
-
-    [SerializeField] private Transform IKHead;
-
-    [SerializeField] private Vector3 headBodyOffset;
-
-    private void LateUpdate()
+    /// <summary>
+    /// Controls the avatar's behavior and synchronization with VR using Inverse Kinematics (IK).
+    /// </summary>
+    public class AvatarController : MonoBehaviour
     {
-        transform.position = IKHead.position + headBodyOffset;
-        transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(IKHead.forward, Vector3.up).normalized, Time.deltaTime * turnSmoothness); ;
-        head.MapVRAvatar();
-        leftHand.MapVRAvatar();
-        rightHand.MapVRAvatar(true);
+        [SerializeField] private MapTransform head;
+        [SerializeField] private MapTransform leftHand;
+        [SerializeField] private MapTransform rightHand;
+
+        [SerializeField] private float turnSmoothness;
+
+        [SerializeField] private Transform IKHead;
+
+        [SerializeField] private Vector3 headBodyOffset;
+
+        private void LateUpdate()
+        {
+            transform.position = IKHead.position + headBodyOffset;
+            transform.forward = Vector3.Lerp(transform.forward,
+                Vector3.ProjectOnPlane(IKHead.forward, Vector3.up).normalized, Time.deltaTime * turnSmoothness);
+            
+            head.MapVRAvatar();
+            leftHand.MapVRAvatar();
+            rightHand.MapVRAvatar();
+        }
     }
 }

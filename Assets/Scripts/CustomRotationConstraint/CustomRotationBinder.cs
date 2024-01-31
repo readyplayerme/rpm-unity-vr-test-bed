@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Animations.Rigging;
 
-namespace Unity.Template.VR
+namespace ReadyPlayerMe.VR
 {
     public class CustomRotationBinder : AnimationJobBinder<CustomRotationJob, CustomRotationData>
     {
