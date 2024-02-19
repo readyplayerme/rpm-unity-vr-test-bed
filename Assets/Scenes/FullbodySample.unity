@@ -5602,6 +5602,87 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493944547}
   m_CullTransparentMesh: 1
+--- !u!1001 &502592670
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 212154233886757259, guid: 6c6cf9356a077054290007cc8f3b144a, type: 3}
+      propertyPath: head.vrTarget
+      value: 
+      objectReference: {fileID: 1487532130}
+    - target: {fileID: 212154233886757259, guid: 6c6cf9356a077054290007cc8f3b144a, type: 3}
+      propertyPath: leftHand.vrTarget
+      value: 
+      objectReference: {fileID: 1825262783}
+    - target: {fileID: 212154233886757259, guid: 6c6cf9356a077054290007cc8f3b144a, type: 3}
+      propertyPath: rightHand.vrTarget
+      value: 
+      objectReference: {fileID: 1128615087}
+    - target: {fileID: 3943899657652443136, guid: 6c6cf9356a077054290007cc8f3b144a, type: 3}
+      propertyPath: m_Data.m_OverrideSource
+      value: 
+      objectReference: {fileID: 1128615087}
+    - target: {fileID: 4191208940713156156, guid: 6c6cf9356a077054290007cc8f3b144a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191208940713156156, guid: 6c6cf9356a077054290007cc8f3b144a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191208940713156156, guid: 6c6cf9356a077054290007cc8f3b144a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191208940713156156, guid: 6c6cf9356a077054290007cc8f3b144a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191208940713156156, guid: 6c6cf9356a077054290007cc8f3b144a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191208940713156156, guid: 6c6cf9356a077054290007cc8f3b144a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191208940713156156, guid: 6c6cf9356a077054290007cc8f3b144a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191208940713156156, guid: 6c6cf9356a077054290007cc8f3b144a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191208940713156156, guid: 6c6cf9356a077054290007cc8f3b144a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191208940713156156, guid: 6c6cf9356a077054290007cc8f3b144a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4587980835288443086, guid: 6c6cf9356a077054290007cc8f3b144a, type: 3}
+      propertyPath: m_Data.m_OverrideSource
+      value: 
+      objectReference: {fileID: 1436343490}
+    - target: {fileID: 4914046802762585894, guid: 6c6cf9356a077054290007cc8f3b144a, type: 3}
+      propertyPath: m_Name
+      value: MaleModularXR
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852919563241798113, guid: 6c6cf9356a077054290007cc8f3b144a, type: 3}
+      propertyPath: m_Sources.Array.data[0].sourceTransform
+      value: 
+      objectReference: {fileID: 1487532130}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c6cf9356a077054290007cc8f3b144a, type: 3}
 --- !u!1 &528032898
 GameObject:
   m_ObjectHideFlags: 0
@@ -18379,7 +18460,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 4.6e-44, w: 0}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 7e-45, z: 1.896e-41, w: 1.3224311e-38}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -23678,87 +23759,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1001 &7755566509004677786
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1300257078303299677, guid: a06cef238a0d30448a56f13ef267cd1e, type: 3}
-      propertyPath: m_Sources.Array.data[0].sourceTransform
-      value: 
-      objectReference: {fileID: 1487532130}
-    - target: {fileID: 3006677551624857457, guid: a06cef238a0d30448a56f13ef267cd1e, type: 3}
-      propertyPath: m_Data.m_OverrideSource
-      value: 
-      objectReference: {fileID: 1128615087}
-    - target: {fileID: 6129228539433768660, guid: a06cef238a0d30448a56f13ef267cd1e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6129228539433768660, guid: a06cef238a0d30448a56f13ef267cd1e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6129228539433768660, guid: a06cef238a0d30448a56f13ef267cd1e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6129228539433768660, guid: a06cef238a0d30448a56f13ef267cd1e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6129228539433768660, guid: a06cef238a0d30448a56f13ef267cd1e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6129228539433768660, guid: a06cef238a0d30448a56f13ef267cd1e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6129228539433768660, guid: a06cef238a0d30448a56f13ef267cd1e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6129228539433768660, guid: a06cef238a0d30448a56f13ef267cd1e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6129228539433768660, guid: a06cef238a0d30448a56f13ef267cd1e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6129228539433768660, guid: a06cef238a0d30448a56f13ef267cd1e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6792752382575021166, guid: a06cef238a0d30448a56f13ef267cd1e, type: 3}
-      propertyPath: m_Name
-      value: Male-Fullbody
-      objectReference: {fileID: 0}
-    - target: {fileID: 7977700759559826415, guid: a06cef238a0d30448a56f13ef267cd1e, type: 3}
-      propertyPath: m_Data.m_OverrideSource
-      value: 
-      objectReference: {fileID: 1436343490}
-    - target: {fileID: 8370426001201719886, guid: a06cef238a0d30448a56f13ef267cd1e, type: 3}
-      propertyPath: head.vrTarget
-      value: 
-      objectReference: {fileID: 1487532130}
-    - target: {fileID: 8370426001201719886, guid: a06cef238a0d30448a56f13ef267cd1e, type: 3}
-      propertyPath: leftHand.vrTarget
-      value: 
-      objectReference: {fileID: 1825262783}
-    - target: {fileID: 8370426001201719886, guid: a06cef238a0d30448a56f13ef267cd1e, type: 3}
-      propertyPath: rightHand.vrTarget
-      value: 
-      objectReference: {fileID: 1128615087}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a06cef238a0d30448a56f13ef267cd1e, type: 3}
 --- !u!1 &8296172669380533193
 GameObject:
   m_ObjectHideFlags: 0
@@ -24787,4 +24787,4 @@ SceneRoots:
   - {fileID: 1703568386}
   - {fileID: 1408467097}
   - {fileID: 948363175}
-  - {fileID: 7755566509004677786}
+  - {fileID: 502592670}
